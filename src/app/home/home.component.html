@@ -11,14 +11,13 @@
             <div class="col">
                 <p>Use this form to add your hobbies</p>
                 <form class="myform">
-                    <input placeholder="Your Hobby" #hobby class="form-control" type="text"/><br/><br/>
-                    <input class="btn btn-warning" type="submit" (click)="addHobbies(hobby.value)" [value]="btnText" value="Add Hobby"/>
+                    <input placeholder="Your Hobby" name="hobby" #hobby [(ngModel)]="hobbyText" class="form-control" type="text"/><br/><br/>
+                    <input class="btn btn-warning" type="submit" (click)="addHobbies()" [value]="btnText" value="Add Hobby"/>
                 </form>
-                <p>{{hobbyText}}</p>
             </div>
             <div class="col hobby-list">
                 <div *ngFor="let hobby of hobbies, let i=index">
-                    <span>{{hobby}}</span><button (click)="deleteHobby(i)" class="btn btn-danger">X</button>
+                    <span>{{hobby}}</span><strong (click)="deleteHobby(i)">X</strong>
                 </div>
             </div>
         </div>

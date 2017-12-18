@@ -4,10 +4,8 @@ import { Router } from '@angular/router';
 
 @Component({
     selector:'about',
-    template:`
-            <p style='margin:4% 0 0 10%;'>This is about page , <strong style='cursor:pointer;' (click)="sendMeBack()">Take me back..!!</strong></p>
-    `,
-    styleUrls:[ ],
+    templateUrl:'./about.component.html',
+    styleUrls:[ './about.component.css' ],
     providers:[ DataService ]
 })
 

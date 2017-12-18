@@ -30,9 +30,8 @@
     padding: 2%;
 }
 
-.bccontainer .hobby-list button{
+.bccontainer .hobby-list strong{
     float: right;
-    padding: 1px;
-    width: 30px;
-    height: 25px;
+    color: brown;
+    
 }

@@ -47,10 +47,12 @@ export class HomeComponent implements OnInit{
 
     }
 
-    addHobbies(hobby){
-        if(this.hobbies.indexOf(hobby)!=-1)
+    addHobbies(){
+        if(this.hobbies.indexOf(this.hobbyText)!=-1)
             return;
-        this.hobbies.push(hobby);
+        if(this.hobbyText=='')
+            return;
+        this.hobbies.push(this.hobbyText);
         this.hobbyText='';       
         this.itemCount=this.hobbies.length;
         this.dataService.changeHobby(this.hobbies);
