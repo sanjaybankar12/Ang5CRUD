@@ -1,0 +1,25 @@
+<div class="bccontainer">
+    <div class="row dark-color">
+        <div class="col">
+            <strong>Add Your Hobbies</strong>
+        </div>
+        <div class="col">
+            <strong>Your Hobby List ({{itemCount}})</strong>
+        </div>
+    </div>
+    <div class="row light-color" [@hobbies]="hobbies.length">
+            <div class="col">
+                <p>Use this form to add your hobbies</p>
+                <form class="myform">
+                    <input placeholder="Your Hobby" #hobby class="form-control" type="text"/><br/><br/>
+                    <input class="btn btn-warning" type="submit" (click)="addHobbies(hobby.value)" [value]="btnText" value="Add Hobby"/>
+                </form>
+                <p>{{hobbyText}}</p>
+            </div>
+            <div class="col hobby-list">
+                <div *ngFor="let hobby of hobbies, let i=index">
+                    <span>{{hobby}}</span><button (click)="deleteHobby(i)" class="btn btn-danger">X</button>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,38 @@
+.bccontainer{
+    width: 80%;
+    margin: 2% auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.bccontainer .dark-color{
+    background-color: royalblue !important;
+    text-align: center;
+    padding: 2%;
+
+}
+
+.bccontainer .light-color{
+    background-color: rgb(88, 115, 196) !important;
+    text-align: left;
+    padding: 2%;
+
+}
+
+.bccontainer .myform input[type=text]{
+    width: 80%;
+}
+
+.bccontainer .hobby-list div{
+    width: 80%;
+    margin: 2% auto;
+    background-color: cadetblue;
+    padding: 2%;
+}
+
+.bccontainer .hobby-list button{
+    float: right;
+    padding: 1px;
+    width: 30px;
+    height: 25px;
+}

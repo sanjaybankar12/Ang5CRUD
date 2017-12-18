@@ -1,0 +1,25 @@
+div{
+    background-color:rosybrown;
+    width: 80%;
+    margin:60px auto 0 auto;
+    padding: 1%;
+}
+.ul-unstyled{
+    list-style-type: none;
+    display: inline;   
+   
+}
+
+.ul-unstyled li{
+    display: inline;
+    padding: 40px;
+    text-align: left;
+    
+}
+
+.ul-unstyled li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+   
+}
